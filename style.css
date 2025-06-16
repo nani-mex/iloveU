@@ -1,0 +1,36 @@
+.buttons{
+
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-gap: 10px;
+}
+
+.calculator{
+
+    width: 300px;
+    background-color: rgb(255, 149, 206);
+    padding: 20px;
+    border-radius: 30px;
+
+}
+
+body{
+    background-color: rgb(161, 198, 255);
+    display: flex;
+    align-items: center;
+    
+}
+
+.display{
+
+    width: 293px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 24px;
+    text-align: right;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(195, 148, 238);
+    color: rgb(125, 255, 212);
+
+}
