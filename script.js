@@ -32,18 +32,14 @@ buttons.forEach(button =>{
             } catch (error) {
                 display.value = 'I love U';
             }
+        
         }
-        else if (value === '+/-') {
-            if (display.value) {
-                display.value = parseFloat(display.value) * -1;
-            }
-        }
-        else if (value === 'x²') {
+        else if (value === 'x2') {
             if (display.value) {
                 display.value = Math.pow(parseFloat(display.value), 2);
             }
         }
-        else if (value === 'x³') {
+        else if (value === 'x3') {
             if (display.value) {
                 display.value = Math.pow(parseFloat(display.value), 3);
             }
@@ -55,11 +51,12 @@ buttons.forEach(button =>{
             display.value += value;
         }
         
-    }
-    else if (value === '√') {
+        } 
+        else if (value === '√') {
             if (display.value) {
                 display.value = Math.sqrt(parseFloat(display.value));
             }
+        
         
         }
         else if (value === 'Emoji') {
@@ -73,7 +70,7 @@ buttons.forEach(button =>{
                 '6': '⑥',
                 '7': '⑦',
                 '8': '⑧',
-                '9': '⑨'
+                '9': '⑨',
             };
             
             display.value = display.value.split('').map(char => emojiMap[char] || char).join('');
