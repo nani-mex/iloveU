@@ -51,6 +51,13 @@ buttons.forEach(button =>{
             display.value += value;
         }
         
+        }
+        else if (value === '(' || value === '(') {
+            display.value += value;
+        }
+        else {
+            display.value += value;
+        }
         } 
         else if (value === '√') {
             if (display.value) {
@@ -58,26 +65,8 @@ buttons.forEach(button =>{
             }
         
         
-        }
-        else if (value === 'Emoji') {
-            const emojiMap = {
-                '0': '⓪',
-                '1': '①',
-                '2': '②',
-                '3': '③',
-                '4': '④',
-                '5': '⑤',
-                '6': '⑥',
-                '7': '⑦',
-                '8': '⑧',
-                '9': '⑨',
-            };
-            
-            display.value = display.value.split('').map(char => emojiMap[char] || char).join('');
-        }
-        else {
-            display.value += value;
-        }
+        
+        
     
 
     });
